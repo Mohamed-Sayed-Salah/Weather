@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-dark p-5">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/image_3.png" alt="logo" />
+          <div class="logo-type ms-1">
+            <h1>Weather</h1>
+            <small>tagline goes here</small>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarID"
+          aria-controls="navbarID"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarID">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" aria-current="page" href="#">News</a>
+            <a class="nav-link" aria-current="page" href="#">Live cameras</a>
+            <a class="nav-link" aria-current="page" href="#">Photos</a>
+            <a class="nav-link" aria-current="page" href="#">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="hero">
+        <div class="container">
+          <form class="find-location position-relative">
+            <input
+              type="text"
+              placeholder="Find your location..."
+              id="search"
+            />
+            <input type="button" value="Find" id="submit" />
+          </form>
+
+          <div id="weather" class="forecast-container">
+            <div class="row rounded-3 overflow-hidden">
+              <div class="col-md-4 today forecast">
+                <div class="forecast-header d-flex justify-content-between">
+                  <div class="day">friday</div>
+                  <div class="date">14June</div>
+                </div>
+                <div class="forecast-content">
+                  <div id="city">cairo</div>
+                  <div id="temperature">41.2<sup>o</sup>C</div>
+                  <img src="images/image_0.png" alt="sun" width="90px" />
+                  <div class="custom">Sunny</div>
+                  <span>
+                    <img src="images/image_5.png" alt="" />
+                    20%
+                  </span>
+                  <span>
+                    <img src="images/image_4.png" alt="" />
+                    18km/h
+                  </span>
+                  <span>
+                    <img src="images/image_6.png" alt="" />
+                    East
+                  </span>
+                </div>
+              </div>
+              <div class="col-md-4 forecast"></div>
+              <div class="col-md-4 forecast"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container pt-5">
+        <div class="subscribe d-flex align-items-center justify-content-center">
+          <form class="position-relative w-75">
+            <input
+              type="text"
+              placeholder="Enter your email to subscribe..."
+              id="subscribe"
+            />
+            <input type="button" value="Subscribe" id="submit" />
+          </form>
+
+          <div
+            class="social-links d-flex justify-content-center align-items-center w-25"
+          >
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+          </div>
+        </div>
+
+        <div class="copyright py-5 text-white">
+          Copyright 2014 Company name. Designed by Themezy. All rights reserved
+        </div>
+      </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
